@@ -1,0 +1,5 @@
+layer,name,evaluated,passed,failed,pass_rate,dominant_failure
+L1,IS/OoS + parameter robustness,48,4,44,0.08333333333333333,OoS Sharpe below threshold
+L2,Walk-forward re-optimization,48,6,42,0.125,out-of-window Sharpe/return below bar
+L3,Stress replay (real + synthetic),48,8,40,0.16666666666666666,blows up in stress window (covid)
+L4,Monte Carlo + Deflated Sharpe,48,0,48,0.0,no skill (permutation) and fails DSR

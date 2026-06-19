@@ -1,0 +1,82 @@
+# ============================================================================
+# PRE-REGISTERED GATE CRITERIA  --  Clarion Capital "Alpha Factory" assignment
+# ----------------------------------------------------------------------------
+# Every numeric pass/fail threshold below is fixed BEFORE the gate is run.
+# The run prints a SHA-256 of this file so the criteria are timestamped against
+# the results.  Any post-hoc change is disclosed in the report (Section: honesty)
+# and shows up as a different hash.
+# ============================================================================
+
+meta:
+  cost_model: realized_spread        # realized <SPREAD> + 0.5bps/side commission
+  timeframe: "1h"                    # M1 resampled to H1 (justified in report)
+
+# ---------------------------------------------------------------------------
+# Layer 1 -- In-sample / out-of-sample split + parameter-neighbour robustness
+# ---------------------------------------------------------------------------
+layer1:
+  is_fraction: 0.70                  # first 70% chronological = IS, last 30% = OoS
+  min_oos_sharpe: 0.50               # OoS annualised Sharpe must clear this
+  require_positive_oos_return: true  # OoS net total return must be > 0
+  perturb_frac: 0.20                 # +/-20% one-at-a-time on each free parameter
+  neighbour_median_min_sharpe: 0.30  # median neighbour OoS Sharpe must clear this
+  neighbour_floor_sharpe: 0.00       # NO neighbour may have OoS Sharpe below this
+                                     #   (a robust optimum has no losing neighbour)
+
+# ---------------------------------------------------------------------------
+# Layer 2 -- Walk-forward (rolling re-optimization)
+# ---------------------------------------------------------------------------
+# Windows are defined in calendar weeks and sliced against each symbol's
+# available bars.  Each window: optimise the 2 params on the trailing TRAIN
+# weeks (objective = train net Sharpe), apply the winner to the next TEST weeks,
+# step by TEST weeks so the out-of-window segments tile the timeline.
+# A family/symbol gives ONE walk-forward equity curve; an *instance* passes only
+# if (a) that curve clears the bar AND (b) the instance's own parameter pair is
+# the optimiser's pick in at least `min_select_fraction` of windows -- i.e. it is
+# a stable out-of-sample winner, not a lucky grid point.
+layer2:
+  # Per-instance verdict: each instance is judged on its OWN fixed-parameter
+  # rolling out-of-window record (no re-optimisation). Independent across
+  # instances -- all can pass in principle.
+  train_weeks: 90
+  test_weeks: 30
+  step_weeks: 30
+  wfo_min_sharpe: 0.50               # aggregated out-of-window Sharpe (level floor)
+  require_positive_wfo_return: true  # aggregated out-of-window return must be positive
+  min_positive_window_fraction: 0.60 # profitable in >=60% of out-of-window segments
+  # --- re-optimisation kept as a DIAGNOSTIC only (does NOT drive pass/fail) ---
+  objective: sharpe                  # in-window metric for the re-optimisation curve
+  min_select_fraction: 0.30          # reported: params chosen in >=X% of windows
+
+# ---------------------------------------------------------------------------
+# Layer 3 -- Stress replay (worst real windows + a synthetic shock)
+# ---------------------------------------------------------------------------
+# Real windows: a fixed COVID window (always included if present) plus the two
+# worst rolling `worst_window_days`-day buy&hold windows per symbol, found from
+# the data.  "Acceptable behaviour" is defined numerically below.
+# Synthetic shock: a volatility-scaled replay -- reconstruct prices from returns
+# multiplied by `vol_mult`, recompute signals on the stressed path, and require
+# the full-sample Sharpe to stay above `synthetic_min_sharpe`.
+layer3:
+  covid_start: "2020-02-20"
+  covid_end:   "2020-04-07"
+  worst_window_days: 21
+  n_worst_windows: 2
+  stress_min_return: -0.10           # strategy return over each window >= -10%
+  stress_max_drawdown: 0.20          # strategy max DD within each window <= 20%
+  vol_mult: 2.0                      # synthetic volatility scaling factor
+  synthetic_min_sharpe: 0.00         # Sharpe on the vol-scaled path must stay >=0
+
+# ---------------------------------------------------------------------------
+# Layer 4 -- Monte Carlo + Deflated Sharpe Ratio (multiple-testing correction)
+# ---------------------------------------------------------------------------
+# n_trials for the DSR = the TOTAL number of instances generated (48), because
+# that is how many Sharpe ratios we fished for.  This is the whole point of the
+# layer: 48 trials make an ordinary Sharpe flattering by construction.
+layer4:
+  n_permutations: 1000               # permutation test against the no-skill null
+  n_bootstrap: 1000                  # moving-block bootstrap for drawdown dist.
+  block_length: 24                   # ~1 trading day of H1 bars
+  permutation_alpha: 0.05            # permutation p-value must be < alpha
+  min_dsr: 0.95                      # Deflated Sharpe Ratio must clear this
+  random_seed: 7

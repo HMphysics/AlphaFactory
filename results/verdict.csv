@@ -1,0 +1,49 @@
+id,L1_pass,L1_reason,L2_pass,L2_reason,L3_pass,L3_reason,L4_pass,L4_reason,n_layers_passed,survivor
+voltarget_mom|SPXUSD|lookback48_vol_win24,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|USDJPY|lookback48_vol_win24,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,True,,False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|XAUUSD|lookback48_vol_win24,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|ETHUSD|lookback48_vol_win24,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,fails Deflated Sharpe (multiple testing),0,False
+voltarget_mom|SPXUSD|lookback48_vol_win72,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|USDJPY|lookback48_vol_win72,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,True,,False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|XAUUSD|lookback48_vol_win72,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|ETHUSD|lookback48_vol_win72,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,fails Deflated Sharpe (multiple testing),0,False
+voltarget_mom|SPXUSD|lookback48_vol_win168,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|USDJPY|lookback48_vol_win168,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,True,,False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|XAUUSD|lookback48_vol_win168,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|ETHUSD|lookback48_vol_win168,True,,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,fails Deflated Sharpe (multiple testing),1,False
+voltarget_mom|SPXUSD|lookback240_vol_win24,False,OoS Sharpe below threshold,True,,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|USDJPY|lookback240_vol_win24,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,True,,False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|XAUUSD|lookback240_vol_win24,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|ETHUSD|lookback240_vol_win24,True,,True,,False,blows up in stress window (covid),False,fails Deflated Sharpe (multiple testing),2,False
+voltarget_mom|SPXUSD|lookback240_vol_win72,False,OoS Sharpe below threshold,True,,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|USDJPY|lookback240_vol_win72,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,True,,False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|XAUUSD|lookback240_vol_win72,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|ETHUSD|lookback240_vol_win72,True,,True,,False,blows up in stress window (covid),False,fails Deflated Sharpe (multiple testing),2,False
+voltarget_mom|SPXUSD|lookback240_vol_win168,False,OoS Sharpe below threshold,True,,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|USDJPY|lookback240_vol_win168,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,True,,False,no skill (permutation) and fails DSR,1,False
+voltarget_mom|XAUUSD|lookback240_vol_win168,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+voltarget_mom|ETHUSD|lookback240_vol_win168,True,,True,,False,blows up in stress window (covid),False,fails Deflated Sharpe (multiple testing),2,False
+bollinger_revert|SPXUSD|n24_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,fails under 2x volatility,False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|USDJPY|n24_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,fails under 2x volatility,False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|XAUUSD|n24_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|ETHUSD|n24_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|SPXUSD|n24_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,fails under 2x volatility,False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|USDJPY|n24_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,fails under 2x volatility,False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|XAUUSD|n24_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|ETHUSD|n24_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|SPXUSD|n24_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,fails under 2x volatility,False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|USDJPY|n24_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,fails under 2x volatility,False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|XAUUSD|n24_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|ETHUSD|n24_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|SPXUSD|n96_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|USDJPY|n96_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|XAUUSD|n96_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|ETHUSD|n96_k1,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|SPXUSD|n96_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|USDJPY|n96_k1.5,False,OoS Sharpe below threshold,False,edge not consistent across windows,True,,False,no skill (permutation) and fails DSR,1,False
+bollinger_revert|XAUUSD|n96_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|ETHUSD|n96_k1.5,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|SPXUSD|n96_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (worst1),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|USDJPY|n96_k2,False,OoS Sharpe below threshold,False,edge not consistent across windows,True,,False,no skill (permutation) and fails DSR,1,False
+bollinger_revert|XAUUSD|n96_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False
+bollinger_revert|ETHUSD|n96_k2,False,OoS Sharpe below threshold,False,out-of-window Sharpe/return below bar,False,blows up in stress window (covid),False,no skill (permutation) and fails DSR,0,False

@@ -1,0 +1,5 @@
+layer,name,in,out,killed,dominant_failure
+L1,IS/OoS + parameter robustness,48,4,44,OoS Sharpe below threshold
+L2,Walk-forward re-optimization,4,3,1,out-of-window Sharpe/return below bar
+L3,Stress replay (real + synthetic),3,0,3,blows up in stress window (covid)
+L4,Monte Carlo + Deflated Sharpe,0,0,0,

@@ -1,0 +1,21 @@
+config_sha256: 8e35cb92eb5f4849b28a0688c49d282d11f7d15d1b3f0df11955ec63bd5d8eab
+cost_model: realized_spread
+n_instances: 48
+
+LayerDescription                           Pass  Fail    Rate  Dominant failure reason
+--------------------------------------------------------------------------------------
+L1   IS/OoS + parameter robustness            4    44    8.3%  OoS Sharpe below threshold
+L2   Walk-forward re-optimization             6    42   12.5%  out-of-window Sharpe/return below bar
+L3   Stress replay (real + synthetic)         8    40   16.7%  blows up in stress window (covid)
+L4   Monte Carlo + Deflated Sharpe            0    48    0.0%  no skill (permutation) and fails DSR
+
+Population entering the gate: 48 candidates
+
+LayerDescription                            In  Out  Killed  Dominant failure reason
+------------------------------------------------------------------------------------
+L1   IS/OoS + parameter robustness          48    4      44  OoS Sharpe below threshold
+L2   Walk-forward re-optimization            4    3       1  out-of-window Sharpe/return below bar
+L3   Stress replay (real + synthetic)        3    0       3  blows up in stress window (covid)
+L4   Monte Carlo + Deflated Sharpe           0    0       0  -
+
+survivors: []

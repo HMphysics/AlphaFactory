@@ -1,0 +1,49 @@
+id,layer,passed,reason,worst_window_return,worst_window_dd,synth_sharpe,n_windows
+voltarget_mom|SPXUSD|lookback48_vol_win24,L3,False,blows up in stress window (worst1),-0.13279175046196212,0.20325160660282482,0.0782673324358014,3
+voltarget_mom|USDJPY|lookback48_vol_win24,L3,True,,-0.08651101964282615,0.1092366283713182,0.39085200083146093,3
+voltarget_mom|XAUUSD|lookback48_vol_win24,L3,False,blows up in stress window (worst1),-0.13039921398969356,0.16995705868182298,0.08508619560376986,3
+voltarget_mom|ETHUSD|lookback48_vol_win24,L3,False,blows up in stress window (covid),-0.5335599768039377,0.6330655824449263,0.5861639464088573,3
+voltarget_mom|SPXUSD|lookback48_vol_win72,L3,False,blows up in stress window (worst1),-0.130776059569348,0.20045348108945504,-0.04383343865087825,3
+voltarget_mom|USDJPY|lookback48_vol_win72,L3,True,,-0.06386160586124112,0.07502708805519998,0.4008308688599549,3
+voltarget_mom|XAUUSD|lookback48_vol_win72,L3,False,blows up in stress window (worst1),-0.1426551672284283,0.17100089082008596,0.16070673057560664,3
+voltarget_mom|ETHUSD|lookback48_vol_win72,L3,False,blows up in stress window (covid),-0.5157605487282761,0.6535738786032028,0.7032520873640643,3
+voltarget_mom|SPXUSD|lookback48_vol_win168,L3,False,blows up in stress window (worst1),-0.11773897459264793,0.17502015185540354,-0.05367022954684538,3
+voltarget_mom|USDJPY|lookback48_vol_win168,L3,True,,-0.06529088540696115,0.07428426821700373,0.3204802417342368,3
+voltarget_mom|XAUUSD|lookback48_vol_win168,L3,False,blows up in stress window (worst1),-0.13040722440002073,0.1597717128481222,0.14691312545967983,3
+voltarget_mom|ETHUSD|lookback48_vol_win168,L3,False,blows up in stress window (covid),-0.43235529500901226,0.6076971781801445,0.8153702226800849,3
+voltarget_mom|SPXUSD|lookback240_vol_win24,L3,False,blows up in stress window (covid),-0.12640047605107307,0.21240896360441186,0.5405582832579471,3
+voltarget_mom|USDJPY|lookback240_vol_win24,L3,True,,-0.08112849133995514,0.10096518177088376,0.02968598346816462,3
+voltarget_mom|XAUUSD|lookback240_vol_win24,L3,False,blows up in stress window (worst1),-0.17075088642723302,0.2250289363282162,0.06859947208998532,3
+voltarget_mom|ETHUSD|lookback240_vol_win24,L3,False,blows up in stress window (covid),-0.40769635108356705,0.5219204667393921,0.9188224833625577,3
+voltarget_mom|SPXUSD|lookback240_vol_win72,L3,False,blows up in stress window (worst1),-0.11117538602618482,0.1793914170511759,0.5917840994745991,3
+voltarget_mom|USDJPY|lookback240_vol_win72,L3,True,,-0.05167342803221131,0.08092922269305491,0.2759990810185278,3
+voltarget_mom|XAUUSD|lookback240_vol_win72,L3,False,blows up in stress window (worst1),-0.14992331759225208,0.22305874700979256,0.08631274114669861,3
+voltarget_mom|ETHUSD|lookback240_vol_win72,L3,False,blows up in stress window (covid),-0.3854481250827465,0.5055686726214197,0.9660307838920548,3
+voltarget_mom|SPXUSD|lookback240_vol_win168,L3,False,blows up in stress window (worst1),-0.12571099086259163,0.18607695826442905,0.4885033564798546,3
+voltarget_mom|USDJPY|lookback240_vol_win168,L3,True,,-0.0572108331310881,0.07582468413024968,0.26908384467870355,3
+voltarget_mom|XAUUSD|lookback240_vol_win168,L3,False,blows up in stress window (worst1),-0.1716518906978003,0.24019066952133084,0.03167594360042974,3
+voltarget_mom|ETHUSD|lookback240_vol_win168,L3,False,blows up in stress window (covid),-0.3515099854661641,0.474186409556976,1.080397013516788,3
+bollinger_revert|SPXUSD|n24_k1,L3,False,fails under 2x volatility,-0.08719968502658904,0.10678549432150397,-0.3127795566019428,3
+bollinger_revert|USDJPY|n24_k1,L3,False,fails under 2x volatility,-0.059996914674313784,0.06538640342746949,-0.8377360808845855,3
+bollinger_revert|XAUUSD|n24_k1,L3,False,blows up in stress window (covid),-0.1218266563927245,0.14448974274784854,-0.3560038299527839,3
+bollinger_revert|ETHUSD|n24_k1,L3,False,blows up in stress window (covid),-0.4345582021176341,0.48042110340365174,-1.283139029044846,3
+bollinger_revert|SPXUSD|n24_k1.5,L3,False,fails under 2x volatility,-0.08589011139409597,0.10882575066294797,-0.5410932478972498,3
+bollinger_revert|USDJPY|n24_k1.5,L3,False,fails under 2x volatility,-0.06891375610004002,0.07057607916302333,-0.8687713912823993,3
+bollinger_revert|XAUUSD|n24_k1.5,L3,False,blows up in stress window (covid),-0.11766845187219332,0.12293413978232881,-0.31629885167404065,3
+bollinger_revert|ETHUSD|n24_k1.5,L3,False,blows up in stress window (worst1),-0.41092763664240795,0.46179519640849465,-1.0338898691855927,3
+bollinger_revert|SPXUSD|n24_k2,L3,False,fails under 2x volatility,-0.08366001803193346,0.1064143126073771,-0.2810963523599237,3
+bollinger_revert|USDJPY|n24_k2,L3,False,fails under 2x volatility,-0.04969606981355945,0.05681787892375101,-0.8152946301566718,3
+bollinger_revert|XAUUSD|n24_k2,L3,False,blows up in stress window (covid),-0.12622806839621903,0.13117818871204578,-0.3218580177934193,3
+bollinger_revert|ETHUSD|n24_k2,L3,False,blows up in stress window (worst1),-0.45028422884154107,0.4622942152388967,-0.8474663243219335,3
+bollinger_revert|SPXUSD|n96_k1,L3,False,blows up in stress window (covid),-0.11031157488295829,0.14769896809393923,-0.21452380308048252,3
+bollinger_revert|USDJPY|n96_k1,L3,False,blows up in stress window (covid),-0.10285081128067353,0.11095749633101726,0.0539715151888716,3
+bollinger_revert|XAUUSD|n96_k1,L3,False,blows up in stress window (covid),-0.16072414299849735,0.17955348760956347,-0.57506527949351,3
+bollinger_revert|ETHUSD|n96_k1,L3,False,blows up in stress window (covid),-0.4113100702595759,0.4348289025001283,-0.3639467815087502,3
+bollinger_revert|SPXUSD|n96_k1.5,L3,False,blows up in stress window (worst1),-0.11157135231048432,0.14769896809393923,0.010543959868800606,3
+bollinger_revert|USDJPY|n96_k1.5,L3,True,,-0.09056217032856406,0.09809822913649335,0.23663435879980038,3
+bollinger_revert|XAUUSD|n96_k1.5,L3,False,blows up in stress window (covid),-0.1587302863567599,0.17955348760956313,-0.5176557808981455,3
+bollinger_revert|ETHUSD|n96_k1.5,L3,False,blows up in stress window (covid),-0.40570598165082306,0.4294487036051142,-0.5904589292014972,3
+bollinger_revert|SPXUSD|n96_k2,L3,False,blows up in stress window (worst1),-0.10971128342836733,0.14769896809393923,0.2046312118228657,3
+bollinger_revert|USDJPY|n96_k2,L3,True,,-0.07115156737100259,0.08040819571239444,0.19057996330078975,3
+bollinger_revert|XAUUSD|n96_k2,L3,False,blows up in stress window (covid),-0.1362637622765831,0.16698454997928158,-0.3308396892459286,3
+bollinger_revert|ETHUSD|n96_k2,L3,False,blows up in stress window (covid),-0.3926884067631343,0.41695119563974803,-0.4864992512428677,3

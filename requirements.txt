@@ -1,0 +1,12 @@
+# The Alpha Factory -- runtime dependencies for run.py and the gate.
+# Pinned to safe minimums; the project was developed and tested against
+# numpy 2.4, pandas 3.0, scipy 1.17, matplotlib 3.x, PyYAML 6.0.
+numpy>=1.24
+pandas>=2.1
+scipy>=1.10
+matplotlib>=3.7
+PyYAML>=6.0
+
+# Note: compiling report/report.tex to PDF requires a LaTeX toolchain
+# (pdflatex), which is a system package, not a pip dependency. The
+# pre-compiled report.pdf is included, so this is only needed to rebuild it.
