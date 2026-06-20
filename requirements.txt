@@ -2,7 +2,7 @@
 # Pinned to safe minimums; the project was developed and tested against
 # numpy 2.4, pandas 3.0, scipy 1.17, matplotlib 3.x, PyYAML 6.0.
 numpy>=1.24
-pandas>=2.1
+pandas>=2.2
 scipy>=1.10
 matplotlib>=3.7
 PyYAML>=6.0
