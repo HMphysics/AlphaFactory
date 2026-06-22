@@ -79,7 +79,7 @@ alphafactory/
 config/
   gate_criteria.yaml   # ALL pass/fail thresholds, fixed before running
 run.py                 # one-command reproduction of the whole funnel
-report/                # report.tex + report.pdf (<=6 pages) + figures
+report/                # report.tex + report_3page.pdf (<=6 pages) + figures
 results/               # written by run.py (tables, figures, cache)
 ```
 
