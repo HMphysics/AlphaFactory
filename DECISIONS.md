@@ -227,8 +227,11 @@ prevent. The legitimate lever for a survivor is a *stronger, more robust* idea
 - **Limitations:** two families and coarse grids; a single timeframe (H1); a
   cost model using mean bar spread without slippage/impact; and raw (rather than
   effective) N in the DSR, kept deliberately as the conservative choice. These are
-  deliberate simplicity trades and candidate next iterations — a richer factory,
-  never a looser gate.
+  deliberate simplicity trades, not laxity. The path forward is not a richer factory,
+  since more variations only raise the deflation bar; it is more history,
+  genuinely orthogonal alpha (new data or a different economic rationale), and
+  combining several weak but uncorrelated signals at the portfolio level.
+  Better ideas and more data, never a looser gate.
 
 ---
 
